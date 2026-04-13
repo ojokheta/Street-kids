@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Street Kids Reformation Home (Victoria Care Israel) - Transforming street children in Ibadan through love, care, and faith.">
+    <title>Street Kids Reformation Home | Victoria Care Israel</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 text-white">
+        <div class="tail-container px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="bg-amber-400 p-2 rounded-xl group-hover:rotate-6 transition-transform">
+                    <i class="fa-solid fa-house-heart text-2xl text-emerald-900"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight leading-none">Street Kids</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-amber-300 font-bold">Reformation Home</p>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                <a href="index.html" class="nav-link active hover:text-amber-400 transition">HOME</a>
+                <a href="about.html" class="nav-link hover:text-amber-400 transition">ABOUT US</a>
+                <a href="work.html" class="nav-link hover:text-amber-400 transition">OUR WORK</a>
+                <a href="gallery.html" class="nav-link hover:text-amber-400 transition">GALLERY</a>
+                <a href="donate.html" class="nav-link hover:text-amber-400 transition">DONATE</a>
+                <a href="contact.html" class="nav-link hover:text-amber-400 transition">CONTACT</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="donate.html" class="hidden md:flex bg-amber-400 hover:bg-amber-500 text-emerald-900 px-6 py-2.5 rounded-full font-bold text-sm items-center gap-2 transition-all shadow-lg shadow-amber-400/20">
+                    <i class="fa-solid fa-heart"></i> DONATE
+                </a>
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-2xl hover:text-amber-400 transition">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-emerald-900/95 backdrop-blur-xl border-t border-emerald-800 absolute w-full left-0 animate-in fade-in slide-in-from-top-4 duration-300">
+            <div class="px-6 py-8 flex flex-col gap-6 font-semibold tracking-wide">
+                <a href="index.html" class="text-amber-400 border-b border-emerald-800 pb-2">HOME</a>
+                <a href="about.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">ABOUT US</a>
+                <a href="work.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">OUR WORK</a>
+                <a href="gallery.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">GALLERY</a>
+                <a href="donate.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">DONATE</a>
+                <a href="contact.html" class="hover:text-amber-400">CONTACT</a>
+                <a href="donate.html" class="bg-amber-400 text-emerald-900 text-center py-4 rounded-xl font-bold mt-4">DONATE NOW</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-[90vh] flex items-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-emerald-900/20 mix-blend-multiply"></div>
+        <div class="tail-container px-6 relative z-10">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-3 mb-6 animate-in slide-in-from-left duration-700">
+                    <span class="w-12 h-[2px] bg-amber-400"></span>
+                    <p class="uppercase tracking-[0.3em] text-amber-400 text-xs font-bold">Ibadan, Nigeria</p>
+                </div>
+                <h2 class="text-6xl md:text-8xl font-bold leading-[0.9] mb-8 animate-in slide-in-from-left duration-1000">Reforming Lives,<br><span class="text-amber-400">Restoring Hope.</span></h2>
+                <p class="text-xl md:text-2xl text-gray-100 max-w-xl mb-12 leading-relaxed opacity-90 animate-in slide-in-from-left duration-1000 delay-200">A safe haven where street children discover their worth through love, education, and faith.</p>
+                
+                <div class="flex flex-wrap gap-5 animate-in slide-in-from-bottom duration-1000 delay-500">
+                    <a href="donate.html" class="btn-primary">
+                        <i class="fa-solid fa-hand-holding-heart"></i> Support Our Mission
+                    </a>
+                    <a href="about.html" class="btn-outline">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MISSION -->
+    <section class="py-32 bg-white">
+        <div class="tail-container px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Children at the home" class="rounded-[2rem] shadow-2xl relative z-10">
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-amber-100 rounded-full -z-0"></div>
+                </div>
+                <div>
+                    <span class="text-emerald-700 font-bold tracking-[0.2em] text-sm uppercase">Titus 2:11</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-6 leading-tight text-gray-900">"For the grace of God that bringeth salvation hath appeared to all men."</h2>
+                    <p class="mt-8 text-lg text-gray-600 leading-relaxed">We rescue street children in Ibadan, providing more than just shelter. We offer a family, an education, and a spiritual foundation that empowers them to rise above their circumstances.</p>
+                    <div class="mt-12 flex items-center gap-6">
+                        <div class="flex -space-x-4">
+                            <img src="https://i.pravatar.cc/100?u=1" class="w-12 h-12 rounded-full border-4 border-white shadow-sm" alt="Supporter">
+                            <img src="https://i.pravatar.cc/100?u=2" class="w-12 h-12 rounded-full border-4 border-white shadow-sm" alt="Supporter">
+                            <img src="https://i.pravatar.cc/100?u=3" class="w-12 h-12 rounded-full border-4 border-white shadow-sm" alt="Supporter">
+                        </div>
+                        <p class="text-sm font-medium text-gray-500">Join <span class="text-emerald-700 font-bold">100+</span> partners making a difference</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="py-32 bg-gray-50">
+        <div class="tail-container px-6">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <span class="text-emerald-700 font-bold tracking-[0.2em] text-sm uppercase">Our Impact</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4">Restoring hope through care and reformation</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-400 transition-colors">
+                        <i class="fa-solid fa-house text-3xl text-amber-500 group-hover:text-emerald-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Safe Shelter</h3>
+                    <p class="text-gray-600 leading-relaxed">A loving family environment where every child feels secure, valued, and at home.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 transition-colors">
+                        <i class="fa-solid fa-book-open text-3xl text-emerald-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Education</h3>
+                    <p class="text-gray-600 leading-relaxed">School enrollment, personalized tutoring, and vocational training for future success.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-500 transition-colors">
+                        <i class="fa-solid fa-pray text-3xl text-blue-500 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Spiritual Growth</h3>
+                    <p class="text-gray-600 leading-relaxed">Daily devotions and mentorship rooted in Christ's love to build lasting character.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="bg-emerald-900 text-white py-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-800 rounded-full blur-3xl opacity-50 -mr-48 -mt-48"></div>
+        <div class="tail-container px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8">Be Part of Their Transformation</h2>
+            <p class="text-xl text-amber-200 max-w-2xl mx-auto mb-12 opacity-90">Your support provides the foundation for a life completely transformed. Every donation makes a real impact.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="donate.html" class="btn-primary text-xl px-12 py-5">
+                    Donate Today
+                </a>
+                <a href="contact.html" class="text-white font-bold hover:text-amber-400 transition underline underline-offset-8">
+                    Other ways to help
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-950 text-gray-300 py-24">
+        <div class="tail-container px-6">
+            <div class="grid lg:grid-cols-4 gap-16 mb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3 text-white mb-8">
+                        <div class="bg-amber-400 p-2 rounded-lg">
+                            <i class="fa-solid fa-house-heart text-xl text-emerald-900"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Street Kids Reformation Home</h3>
+                    </div>
+                    <p class="text-lg mb-8 max-w-md">Victoria Care Israel • Ibadan, Nigeria. Dedicated to the total reformation of street children through love and faith.</p>
+                    <div class="bg-emerald-900/50 p-6 rounded-2xl border border-emerald-800 inline-block">
+                        <p class="text-xs uppercase tracking-widest text-amber-400 font-bold mb-2">Access Bank Account</p>
+                        <p class="text-2xl font-mono font-bold text-white tracking-tighter">0123456789</p>
+                        <p class="text-sm mt-1">Victoria Funmilayo Israel</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">Navigation</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> About Us</a></li>
+                        <li><a href="work.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Our Work</a></li>
+                        <li><a href="gallery.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Gallery</a></li>
+                        <li><a href="donate.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">Connect</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-amber-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-bold">+234 803 514 7940</p>
+                                <p class="text-xs">Call or WhatsApp</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-brands fa-facebook-f text-amber-400 mt-1"></i>
+                            <div>
+                                <a href="https://www.facebook.com/people/Street-Kids-Reformation-Home/100069124423814/" target="_blank" class="text-white font-bold hover:text-amber-400 transition">Facebook Page</a>
+                                <p class="text-xs">Follow our updates</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-emerald-900 text-sm flex flex-col md:row items-center justify-between gap-6">
+                <p>© 2026 Street Kids Reformation Home. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Section visibility on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

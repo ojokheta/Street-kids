@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Street Kids Reformation Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 text-white">
+        <div class="tail-container px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="bg-amber-400 p-2 rounded-xl group-hover:rotate-6 transition-transform">
+                    <i class="fa-solid fa-house-heart text-2xl text-emerald-900"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight leading-none">Street Kids</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-amber-300 font-bold">Reformation Home</p>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                <a href="index.html" class="nav-link hover:text-amber-400 transition">HOME</a>
+                <a href="about.html" class="nav-link hover:text-amber-400 transition">ABOUT US</a>
+                <a href="work.html" class="nav-link hover:text-amber-400 transition">OUR WORK</a>
+                <a href="gallery.html" class="nav-link hover:text-amber-400 transition">GALLERY</a>
+                <a href="donate.html" class="nav-link active hover:text-amber-400 transition">DONATE</a>
+                <a href="contact.html" class="nav-link hover:text-amber-400 transition">CONTACT</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="donate.html" class="hidden md:flex bg-amber-400 hover:bg-amber-500 text-emerald-900 px-6 py-2.5 rounded-full font-bold text-sm items-center gap-2 transition-all shadow-lg shadow-amber-400/20">
+                    <i class="fa-solid fa-heart"></i> DONATE
+                </a>
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-2xl hover:text-amber-400 transition">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-emerald-900/95 backdrop-blur-xl border-t border-emerald-800 absolute w-full left-0 animate-in fade-in slide-in-from-top-4 duration-300">
+            <div class="px-6 py-8 flex flex-col gap-6 font-semibold tracking-wide">
+                <a href="index.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">HOME</a>
+                <a href="about.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">ABOUT US</a>
+                <a href="work.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">OUR WORK</a>
+                <a href="gallery.html" class="hover:text-amber-400 border-b border-emerald-800 pb-2">GALLERY</a>
+                <a href="donate.html" class="text-amber-400 border-b border-emerald-800 pb-2">DONATE</a>
+                <a href="contact.html" class="hover:text-amber-400">CONTACT</a>
+                <a href="donate.html" class="bg-amber-400 text-emerald-900 text-center py-4 rounded-xl font-bold mt-4">DONATE NOW</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="bg-emerald-900 text-white py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="tail-container px-6 relative z-10 text-center">
+            <span class="text-amber-400 font-bold tracking-[0.3em] text-xs uppercase mb-4 block">Make an Impact</span>
+            <h1 class="text-5xl md:text-7xl font-bold">Support Our Mission</h1>
+            <p class="mt-6 text-xl text-amber-200 max-w-2xl mx-auto">Your generosity provides the food, education, and care these children need to thrive.</p>
+        </div>
+    </header>
+
+    <section class="py-32 bg-gray-50">
+        <div class="tail-container px-6">
+            <!-- DONATION PROGRESS BAR -->
+            <div class="max-w-4xl mx-auto mb-20 bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-emerald-100">
+                <div class="flex flex-col md:row items-end justify-between mb-6 gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-emerald-900">Fundraising Progress</h3>
+                        <p class="text-gray-500">Help us reach our monthly goal for the children's welfare.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-3xl font-black text-emerald-700">₦250,000</span>
+                        <span class="text-gray-400 font-bold uppercase tracking-widest text-sm"> / ₦1,000,000 goal</span>
+                    </div>
+                </div>
+                
+                <div class="w-full h-6 bg-gray-100 rounded-full overflow-hidden mb-4 p-1 shadow-inner">
+                    <div class="h-full bg-gradient-to-r from-emerald-500 to-amber-400 rounded-full transition-all duration-1000 ease-out relative" style="width: 25%">
+                        <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between text-sm font-bold tracking-wide">
+                    <p class="text-emerald-600">25% ACHIEVED</p>
+                    <p class="text-gray-400">750,000 NAIRA TO GO</p>
+                </div>
+            </div>
+
+            <!-- RECENT DONORS -->
+            <div class="max-w-4xl mx-auto mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px bg-emerald-100 flex-grow"></span>
+                    <h3 class="text-sm font-black uppercase tracking-[0.3em] text-emerald-800">Recent Donors</h3>
+                    <span class="h-px bg-emerald-100 flex-grow"></span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 border-b-4 border-b-emerald-500 hover:-translate-y-1 transition duration-300">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 font-bold">O</div>
+                            <p class="font-bold text-gray-800 truncate">Ojokheta Enterprises</p>
+                        </div>
+                        <p class="text-2xl font-black text-emerald-700">₦50,000</p>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase mt-2">2 hours ago</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 border-b-4 border-b-amber-400 hover:-translate-y-1 transition duration-300">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 font-bold">J</div>
+                            <p class="font-bold text-gray-800 truncate">Jamiu Femi</p>
+                        </div>
+                        <p class="text-2xl font-black text-emerald-700">₦20,000</p>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase mt-2">5 hours ago</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 border-b-4 border-b-emerald-500 hover:-translate-y-1 transition duration-300">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 font-bold">A</div>
+                            <p class="font-bold text-gray-800 truncate">Anonymous Donor</p>
+                        </div>
+                        <p class="text-2xl font-black text-emerald-700">₦15,000</p>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase mt-2">Yesterday</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-20 items-start">
+                <div class="bg-white p-12 md:p-16 rounded-[3rem] shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-amber-400 text-emerald-900 px-8 py-2 rounded-bl-3xl font-bold text-sm uppercase tracking-widest">Bank Transfer</div>
+                    <h2 class="text-3xl font-bold mb-12">Direct Donation</h2>
+                    
+                    <div class="space-y-10">
+                        <div class="group">
+                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">Bank Name</p>
+                            <p class="text-3xl font-bold text-emerald-700">Test Bank</p>
+                        </div>
+                        <div class="group">
+                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">Account Number</p>
+                            <div class="flex items-center gap-4">
+                                <p class="text-4xl md:text-5xl font-mono font-bold tracking-tighter text-gray-900">0123456789</p>
+                                <button onclick="copyAccount()" class="text-emerald-600 hover:text-emerald-700 transition" title="Copy Account Number">
+                                    <i class="fa-regular fa-copy text-2xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">Account Name</p>
+                            <p class="text-2xl font-bold text-gray-800">Street Kids Foundation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-16 p-8 bg-emerald-50 rounded-2xl border border-emerald-100 flex gap-6 items-start">
+                        <i class="fa-solid fa-circle-info text-2xl text-emerald-600 mt-1"></i>
+                        <p class="text-sm text-emerald-800 leading-relaxed">After making a transfer, please share a screenshot or confirmation via WhatsApp to <strong>+234 803 514 7940</strong>. This helps us track donations and send you a formal thank-you note.</p>
+                    </div>
+                </div>
+
+                <div class="space-y-12">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6">Where your money goes</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">We maintain full transparency with all donations. Every Naira contributed goes directly towards the children's welfare and the home's operations.</p>
+                    </div>
+                    
+                    <div class="grid gap-6">
+                        <div class="flex gap-6 items-center p-6 bg-white rounded-3xl shadow-sm">
+                            <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Nutritious Meals</h4>
+                                <p class="text-gray-500 text-sm">Providing three healthy meals a day for every child.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center p-6 bg-white rounded-3xl shadow-sm">
+                            <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">School Fees & Supplies</h4>
+                                <p class="text-gray-500 text-sm">Covering tuition, uniforms, books, and educational trips.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center p-6 bg-white rounded-3xl shadow-sm">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Medical Care</h4>
+                                <p class="text-gray-500 text-sm">Regular checkups, vaccinations, and emergency medical needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-10 bg-emerald-900 rounded-[3rem] text-white">
+                        <h4 class="text-2xl font-bold mb-4">Sponsor a Child</h4>
+                        <p class="text-emerald-100 mb-8">Looking for a more personal way to help? You can sponsor a specific child's education and welfare on a monthly basis.</p>
+                        <a href="contact.html" class="inline-block bg-amber-400 text-emerald-900 px-8 py-3 rounded-full font-bold hover:bg-amber-500 transition">Inquire about Sponsorship</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-950 text-gray-300 py-24">
+        <div class="tail-container px-6">
+            <div class="grid lg:grid-cols-4 gap-16 mb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3 text-white mb-8">
+                        <div class="bg-amber-400 p-2 rounded-lg">
+                            <i class="fa-solid fa-house-heart text-xl text-emerald-900"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Street Kids Reformation Home</h3>
+                    </div>
+                    <p class="text-lg mb-8 max-w-md">Victoria Care Israel • Ibadan, Nigeria. Dedicated to the total reformation of street children through love and faith.</p>
+                    <div class="bg-emerald-900/50 p-6 rounded-2xl border border-emerald-800 inline-block">
+                        <p class="text-xs uppercase tracking-widest text-amber-400 font-bold mb-2">Access Bank Account</p>
+                        <p class="text-2xl font-mono font-bold text-white tracking-tighter">1858834153</p>
+                        <p class="text-sm mt-1">Victoria Funmilayo Israel</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">Navigation</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> About Us</a></li>
+                        <li><a href="work.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Our Work</a></li>
+                        <li><a href="gallery.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Gallery</a></li>
+                        <li><a href="donate.html" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">Connect</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-amber-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-bold">+234 803 514 7940</p>
+                                <p class="text-xs">Call or WhatsApp</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-brands fa-facebook-f text-amber-400 mt-1"></i>
+                            <div>
+                                <a href="https://www.facebook.com/people/Street-Kids-Reformation-Home/100069124423814/" target="_blank" class="text-white font-bold hover:text-amber-400 transition">Facebook Page</a>
+                                <p class="text-xs">Follow our updates</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-emerald-900 text-sm flex flex-col md:row items-center justify-between gap-6">
+                <p>© 2026 Street Kids Reformation Home. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function copyAccount() {
+            navigator.clipboard.writeText('0123456789').then(() => {
+                alert('Account number copied to clipboard!');
+            });
+        }
+
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, observerOptions);
+        document.querySelectorAll('section').forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>

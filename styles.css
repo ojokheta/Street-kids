@@ -1,0 +1,108 @@
+/* styles.css - Shared Professional Styling for Street Kids Reformation Home */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================== CUSTOM STYLES ====================== */
+
+:root {
+    --brand-emerald: #065f46;
+    --brand-emerald-dark: #064e3b;
+    --brand-amber: #fbbf24;
+    --brand-amber-dark: #f59e0b;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.tail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+                      url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar styling */
+nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(6, 95, 70, 0.95);
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--brand-amber);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Section transitions */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    @apply bg-amber-400 hover:bg-amber-500 text-emerald-900 px-8 py-4 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-amber-400/20 hover:-translate-y-1 active:translate-y-0;
+}
+
+.btn-outline {
+    @apply border-2 border-white hover:bg-white hover:text-emerald-900 px-8 py-4 rounded-full font-bold transition-all duration-300 shadow-lg hover:-translate-y-1 active:translate-y-0;
+}
+
+/* Gallery image hover effect */
+.gallery-img {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .hero-bg {
+        background-attachment: scroll;
+    }
+}
